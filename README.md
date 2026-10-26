@@ -1,16 +1,13 @@
 # notification-service
 
-Content-free push notifications via Firebase Cloud Messaging; device push tokens and preferences. .NET 10, PostgreSQL.
+Wakes up phones that aren't connected. When a message arrives for a device that is offline, this service sends a push through Firebase Cloud Messaging (APNs on iOS). The push carries no content; the app wakes up, downloads the message and decrypts it itself.
 
-Part of an end-to-end encrypted messenger built for *Računalniške storitve v oblaku* (UL FRI, 2026/27) by project group 13.
+Built with .NET 10 and PostgreSQL.
 
-| | |
-|---|---|
-| Owner | Eva Vidic |
-| Stack | .NET 10, PostgreSQL, Firebase Cloud Messaging |
-| Status | Planned; scaffolding starts in week 1 (27. 10.–8. 11. 2026) |
-| Architecture and plan | <https://github.com/rso-ekipa13/docs> |
+Owner: Eva Vidic. Status: planned.
 
-## Branches
+## Where this fits
 
-`main` is protected (pull requests only) and deployable; `dev` is the integration branch.
+This is one of the repositories of [Pretty Good Pigeon](https://github.com/rso-ekipa13), an end-to-end encrypted messenger built by ekipa 13 for the Cloud Computing course at UL FRI (2026/27). The architecture, plan and decisions live in [docs](https://github.com/rso-ekipa13/docs).
+
+`main` only changes through pull requests; day-to-day work goes to `dev`.
